@@ -8,7 +8,7 @@ if none return none!
 '''
 from sys import argv
 from bs4 import BeautifulSoup
-codeList = [];
+
 def detectCode(code, *args):
 	soup = BeautifulSoup(code, "lxml")
 	result = soup.find_all(lambda tag: tag.name == 'code')
